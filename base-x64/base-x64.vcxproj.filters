@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="kiero">
+      <UniqueIdentifier>{7a144d8c-402d-4681-8816-50c53cfacbb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero\imgui">
+      <UniqueIdentifier>{f884d9b3-8c88-4f5d-b486-68788f48a945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{b95561de-9d7c-465e-8482-3640313a1a04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\menu">
+      <UniqueIdentifier>{f5e78c21-4408-45a9-b97e-839aca208eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gta">
+      <UniqueIdentifier>{200919c4-3f27-4459-a0b5-326cacb20c0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\native_ui">
+      <UniqueIdentifier>{425d5d1d-9c42-4d51-9494-c160f41e0bd0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.hpp">
@@ -24,6 +42,204 @@
     <ClInclude Include="logger.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="..\kiero\kiero.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kiero\kiero_userconfig.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="unity.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>kiero\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>kiero\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>kiero\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>kiero\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>kiero\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>kiero\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>kiero\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>kiero\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\Gui.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\FontInitializer.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\menus\NetworkGui.hpp">
+      <Filter>gui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\menus\SettingsGui.hpp">
+      <Filter>gui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\menus\HomeGui.hpp">
+      <Filter>gui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\array.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\base.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\blip.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\color.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\decal_controller.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\enums.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\extensible.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\fwddec.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\joaat.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\matrix.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\natives.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\net_game_event.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\net_object_mgr.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\node_list.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\ped_factory.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\player.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\ref_aware.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\replay.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\script_handler.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\script_id.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\script_program.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\script_thread.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\sysMemAllocator.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\tls_context.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="gta\vector.hpp">
+      <Filter>gta</Filter>
+    </ClInclude>
+    <ClInclude Include="script_mgr.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="script.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="script_global.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="script_local.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="invoker.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="crossmap.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="natives.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="fiber_pool.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\PlayerSubmenu.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RegularOption.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RegularSubmenu.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\SubOption.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\TextBox.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIManager.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\AbstractOption.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\AbstractSubmenu.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BaseOption.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BaseSubmenu.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BoolOption.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ChooseOption.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\NumberOption.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Timer.hpp">
+      <Filter>gui\native_ui</Filter>
+    </ClInclude>
+    <ClInclude Include="crashlogger.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -33,6 +249,75 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="logger.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kiero\kiero.cpp">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="unity.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>kiero\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>kiero\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>kiero\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>kiero\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>kiero\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>kiero\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>kiero\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\Gui.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\FontInitializer.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\menus\SettingsGui.cpp">
+      <Filter>gui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\menus\HomeGui.cpp">
+      <Filter>gui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\menus\NetworkGui.cpp">
+      <Filter>gui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="script_mgr.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="script.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="script_global.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="script_local.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="invoker.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="fiber_pool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIManager.cpp">
+      <Filter>gui\native_ui</Filter>
+    </ClCompile>
+    <ClCompile Include="crashlogger.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

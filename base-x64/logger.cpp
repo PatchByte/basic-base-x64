@@ -17,7 +17,7 @@ namespace base
 
 		this->m_Output.open("CONOUT$");
 		this->m_Input.open("CONIN$");
-
+		this->m_FileOutput.open(g_CheatPath /= "Log.txt", std::ios::trunc);
 
 	}
 
@@ -30,6 +30,8 @@ namespace base
 
 	void log::Info(const char* format, ...)
 	{
+
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
 		std::va_list args{};
 		va_start(args, format);
 		Log("Info", format, args);
@@ -38,12 +40,21 @@ namespace base
 
 	void log::Error(const char* format, ...)
 	{
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED);
 		std::va_list args{};
 		va_start(args, format);
 		Log("Error", format, args);
 		va_end(args);
 	}
 
+	void log::Warning(const char* format, ...)
+	{
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_GREEN);
+		std::va_list args{};
+		va_start(args, format);
+		Log("Warning", format, args);
+		va_end(args);
+	}
 
 	void log::Log(const char* type, const char* format, std::va_list args)
 	{
@@ -61,6 +72,7 @@ namespace base
 		std::vsnprintf(messageBuffer.get(), messageLength, format, args);
 
 		this->m_Output << prefix << messageBuffer.get() << std::endl;
+		this->m_FileOutput << prefix << messageBuffer.get() << std::endl;
 	}
 
 

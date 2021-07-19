@@ -16,6 +16,8 @@ namespace base
 
 		void init();
 		void shutdown();
+		void tick();
+		static void init_script();
 	public:
 	};
 
