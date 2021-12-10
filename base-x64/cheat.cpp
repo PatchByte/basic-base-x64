@@ -15,8 +15,8 @@ namespace base
 
 		while (g_Running)
 		{
-			if (GetKeyState(VK_END))
-				g_Running = false;
+			if (GetKeyState(VK_END) & 1)
+			{	g_Running = false;	}
 		}
 
 		g_Cheat->shutdown();
@@ -24,6 +24,7 @@ namespace base
 		g_Cheat.reset();
 		g_Logger.reset();
 
+		CloseHandle(base::g_mThreadHandle);
 		FreeLibraryAndExitThread(base::g_mModule, 0);
 	}
 

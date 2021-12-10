@@ -11,7 +11,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     case DLL_PROCESS_ATTACH:
     {
         base::g_mModule = hModule;
-        CreateThread(0, 0, (LPTHREAD_START_ROUTINE)base::Cheat::initialize, 0, 0, 0);
+        base::g_mThreadHandle = CreateThread(0, 0, (LPTHREAD_START_ROUTINE)base::Cheat::initialize, 0, 0, 0);
         break;
     }
     case DLL_THREAD_ATTACH:

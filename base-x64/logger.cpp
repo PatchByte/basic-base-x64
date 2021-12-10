@@ -32,6 +32,7 @@ namespace base
 	{
 		std::va_list args{};
 		va_start(args, format);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_BLUE);
 		Log("Info", format, args);
 		va_end(args);
 	}
@@ -40,6 +41,7 @@ namespace base
 	{
 		std::va_list args{};
 		va_start(args, format);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED);
 		Log("Error", format, args);
 		va_end(args);
 	}

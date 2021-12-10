@@ -16,6 +16,9 @@
 
 namespace base
 {
-	inline HMODULE g_mModule = 0;
+	inline HMODULE g_mModule = NULL;
+
+	inline HANDLE g_mThreadHandle = NULL;
+
 	inline bool g_Running = true;
 }
