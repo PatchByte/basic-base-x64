@@ -11,7 +11,11 @@
 
 #include <fstream>
 
+#ifdef _WIN64
 #pragma comment(lib, "lib/Release/libMinHook.x64.lib")
+#else
+#pragma comment(lib, "lib/Release/libMinHook.x32.lib")
+#endif
 #include <MinHook.h>
 
 namespace base
