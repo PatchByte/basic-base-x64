@@ -72,22 +72,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)output</OutDir>
+    <OutDir>$(SolutionDir)output/</OutDir>
     <IntDir>$(SolutionDir)temp/$(ProjectName)/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)output</OutDir>
+    <OutDir>$(SolutionDir)output/</OutDir>
     <IntDir>$(SolutionDir)temp/$(ProjectName)/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)output</OutDir>
+    <OutDir>$(SolutionDir)output/</OutDir>
     <IntDir>$(SolutionDir)temp/$(ProjectName)/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)output</OutDir>
+    <OutDir>$(SolutionDir)output/</OutDir>
     <IntDir>$(SolutionDir)temp/$(ProjectName)/</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -164,6 +164,7 @@
     <ClInclude Include="cheat.hpp" />
     <ClInclude Include="common.hpp" />
     <ClInclude Include="logger.hpp" />
+    <ClInclude Include="Signature.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cheat.cpp" />
